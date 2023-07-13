@@ -1,0 +1,55 @@
+// .hero {
+//   color: $color-default-white;
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   font-weight: 600;
+// }
+
+// .hero__text {
+//   display: grid;
+//   grid-template-columns: auto auto;
+//   grid-template-rows: auto auto auto;
+//   gap: 0;
+//   margin: 0 64px 0 0;
+// }
+
+// .hero__city {
+//   align-self: end;
+//   text-align: center;
+//   margin: 0;
+//   grid-column: 2;
+//   grid-row: 1;
+//   font-size: 48px;
+//   letter-spacing: 1.44px;
+// }
+
+// .hero__title {
+//   font-size: 92px;
+//   margin: 0;
+//   grid-column: 2;
+//   grid-row: 2;
+//   text-align: right;
+// }
+
+// .hero__btn {
+//   grid-column: 2;
+//   grid-row: 3;
+// }
+
+// .hero__list {
+//   grid-column: 1;
+//   grid-row: 2 / 3;
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   text-transform: none;
+//   font-size: 14px;
+//   font-family: $ff-roboto;
+//   font-weight: 400;
+//   align-self: center;
+// }
+
+// .hero__img img {
+//   text-align: right;
+// }
+

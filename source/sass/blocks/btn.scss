@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  padding: 10px 20px;
+
+  font-family: $ff-roboto;
+  font-size: 12px;
+
+  color: $color-default-white;
+
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

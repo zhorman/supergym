@@ -1,0 +1,19 @@
+.header {
+  padding: 30px 0 51px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
+}
+
+.header__bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__phone {
+  color: $color-default-white;
+  font-size: 26px;
+  letter-spacing: 0.78px;
+}
