@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Фитнес центр Supergym">
+  <meta name="description" content="Фитнес центр Supergym" />
   <title>Supergym</title>
-  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="icon" href="img/favicon.svg">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous" />
+  <link rel="icon" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
@@ -18,7 +18,9 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__bar">
-          <a href="#" class="header__logo"><img src="/img/logo.svg" alt="Логотип Supergym" width="122" height="44"></a>
+          <a href="#" class="header__logo"> <svg width="88" height="32">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg></a>
           <a href="tel:+78005555555" class="header__phone">8-800-555-55-55</a>
         </div>
         <!-- <section class="hero">
@@ -40,13 +42,62 @@
       </div>
     </header>
     <main>
-
-      <section class="">
-
-      </section>
+      <section class=""></section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="#" class="footer__logo-link">
+            <svg width="88" height="32">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item footer__navigation-item--mobile">
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Услуги</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Абонементы</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Акции</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Тренеры</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg width="12" height="14">
+                <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
 
@@ -69,7 +120,10 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <p class="modal__description">
+          Размер этой модалки зависит от ширины контента,<br />
+          отключена анимация-скейл
+        </p>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite.svg#icon-close"></use>
