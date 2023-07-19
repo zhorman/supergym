@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -21,6 +22,19 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initTabs();
+  });
+});
+
+const playButton = document.querySelector('.about__video-button');
+const video = document.querySelector('.about__video-content');
+
+playButton.addEventListener('click', function () {
+  video.play();
+  playButton.style.display = 'none';
+
+  video.addEventListener('play', function () {
+    playButton.style.display = 'none';
   });
 });
 
