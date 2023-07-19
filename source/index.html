@@ -40,8 +40,123 @@
         </section>
       </div>
     </header>
-    <main>
-      <section class=""></section>
+    <main class="main">
+      <div class="container">
+
+        <section class="about">
+          <div class="about__text">
+            <h2 class="about__title">Тренажерный зал</h2>
+            <p class="about__subtitle">Просторный зал площадью 900 кв/м</p>
+            <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для
+              укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+              спортсменов.
+            </p>
+            <p class="about__description about__description--desktop">В зале расположены отдельная зона для Crossfit и
+              кардио-зона с 40 тренажерами.
+              Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <div class="about__image">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/gym-mobile@2x.jpg 2x,
+              img/gym-mobile.jpg 1x">
+              <source media="(max-width: 1199px)" srcset="img/gym-tablet@2x.jpg 2x,
+              img/gym-tablet.jpg 1x">
+              <img src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" alt="Тренажерный зал" width="660" height="401">
+            </picture>
+          </div>
+          <div class="about__video">
+            <video class="about__video-content" width="364" height="228" poster="img/video-preview.png">
+              <source src="img/about.mp4" type="video/mp4">
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+            <button class="about__video-button"><img src="img/svg/play-button.svg" alt="" width="100"
+                height="100"></button>
+          </div>
+        </section>
+      </div>
+
+      <section class="abonements">
+        <div class="container">
+          <h2 class="abonements__title">Абонементы</h2>
+          <div class="tabs" data-tabs="parent">
+            <div class="abonements__controls" data-tabs="controls">
+              <button class="abonements__control btn" type="button" data-tabs="control" data-index="0">1 месяц</button>
+              <button class="abonements__control btn is-active" type="button" data-tabs="control" data-index="1">6 месяцев</button>
+              <button class="abonements__control btn" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+            </div>
+            <div class="abonements__tabs" data-tabs="content">
+              <div class="abonements__tab " data-tabs="element">
+                <ul class="abonements__cards-list">
+                  <li class="abonements__cards-item abonements__cards-item--active card">
+                    <h2 class="card__title">С тренером</h2>
+                    <p class="card__description">12 занятий</p>
+                    <p class="card__price">5000 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">Дневной</h2>
+                    <p class="card__description">с 8:00 до 17:00 </p>
+                    <p class="card__price">1700 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">Полный день</h2>
+                    <p class="card__description">с 8:00 до 22:00 </p>
+                    <p class="card__price">2700 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="abonements__tab is-active" data-tabs="element">
+                <ul class="abonements__cards-list">
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">С тренером</h2>
+                    <p class="card__description">72 занятия</p>
+                    <p class="card__price">25000 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">Дневной</h2>
+                    <p class="card__description">с 8:00 до 17:00 </p>
+                    <p class="card__price">9000 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">Полный день</h2>
+                    <p class="card__description">с 8:00 до 22:00 </p>
+                    <p class="card__price">13800 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="abonements__tab" data-tabs="element">
+                <ul class="abonements__cards-list">
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">С тренером</h2>
+                    <p class="card__description">144 занятия</p>
+                    <p class="card__price">40000 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">Дневной</h2>
+                    <p class="card__description">с 8:00 до 17:00 </p>
+                    <p class="card__price">15000 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                  <li class="abonements__cards-item card">
+                    <h2 class="card__title">Полный день</h2>
+                    <p class="card__description">с 8:00 до 22:00 </p>
+                    <p class="card__price">24000 ₽</p>
+                    <button class="card__btn btn">Купить абонемент</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer class="footer">
       <div class="container footer__container">
