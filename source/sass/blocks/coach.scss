@@ -1,0 +1,40 @@
+.coach {
+  position: relative;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+  text-align: center;
+}
+
+.coach__text-content {
+  position: absolute;
+  padding: 30px 68px;
+  bottom: 0;
+  left: 0;
+}
+
+.coach__info {
+  display: block;
+}
+
+.coach:hover.coach__info {
+  display: block;
+  background-color: $color-sapphire;
+}
+
+
+.coach__info-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.coach__name {
+  font-size: 18px;
+  font-weight: 700;
+}
