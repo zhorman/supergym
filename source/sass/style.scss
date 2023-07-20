@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -29,6 +29,9 @@
 @import "blocks/abonements";
 @import "blocks/card";
 @import "blocks/data-tabs";
+@import "blocks/event";
+@import "blocks/coaches";
+@import "blocks/coach";
 @import "blocks/footer";
 
 // ---------------------------------
