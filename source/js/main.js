@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-import {slider} from "./modules/slider/slider";
+import {slider} from './modules/slider/slider';
 
 // ---------------------------------
 
@@ -24,7 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTabs();
-    slider();
   });
 });
 
@@ -39,7 +38,6 @@ playButton.addEventListener('click', function () {
     playButton.style.display = 'none';
   });
 });
-
 
 
 // ---------------------------------
