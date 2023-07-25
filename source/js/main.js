@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {slider} from './modules/slider/slider';
+import {sliderFeedback} from './modules/slider/slider-feedback';
+import { initAccordions } from "./modules/accordion/init-accordion";
 
 // ---------------------------------
 
@@ -24,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTabs();
+    initAccordions();
   });
 });
 

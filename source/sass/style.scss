@@ -5,6 +5,8 @@
 // Swiper 7.4.1
 @import "vendor/swiper";
 
+@import "vendor/data-accordion";
+
 // Global
 // ---------------------------------
 
@@ -35,6 +37,9 @@
 @import "blocks/advantages";
 @import "blocks/advantage";
 @import "blocks/promo";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/feedback";
 @import "blocks/footer";
 
 // ---------------------------------
