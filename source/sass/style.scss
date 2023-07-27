@@ -3,7 +3,9 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
+
+@import "vendor/data-accordion";
 
 // Global
 // ---------------------------------
@@ -25,6 +27,23 @@
 @import "blocks/custom-select";
 @import "blocks/header";
 @import "blocks/hero";
+@import "blocks/about";
+@import "blocks/abonements";
+@import "blocks/card";
+@import "blocks/data-tabs";
+@import "blocks/event";
+@import "blocks/coaches";
+@import "blocks/coach";
+@import "blocks/advantages";
+@import "blocks/advantage";
+@import "blocks/promo";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/feedback";
+@import "blocks/form-contacts";
+@import "blocks/free-lesson";
+@import "blocks/contacts";
+@import "blocks/footer";
 
 // ---------------------------------
 

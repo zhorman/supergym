@@ -4,16 +4,67 @@
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
+  background: url("/img/hero-bg.png") no-repeat;
+  background-size: cover;
+
+  @include vp-1199 {
+    padding: 35px 0;
+  }
+
+  @include vp-767 {
+    padding: 16px 0 32px;
+  }
+}
+
+.header__logo {
+  @include vp-1199 {
+    padding: 6px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.header__logo svg {
+  width: 122px;
+  height: 44px;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
+  }
 }
 
 .header__bar {
   display: flex;
   justify-content: space-between;
+
+  @include vp-1199 {
+    padding: 0 0 18px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .header__phone {
   color: $color-default-white;
   font-size: 26px;
   letter-spacing: 0.78px;
+
+  @include vp-1199 {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+  }
 }
