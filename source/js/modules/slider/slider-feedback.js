@@ -9,4 +9,3 @@ const swiper = new Swiper('.feedback__swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
