@@ -7,16 +7,17 @@
   @include vp-1199 {
     padding: 100px 0 183px;
     flex-direction: column;
-    gap: 50px;
+    gap: 43px;
   }
 
   @include vp-767 {
-    padding: 40px 0 70px;
+    padding: 63px 0 77px;
+    gap: 33px;
   }
 }
 
 .about__text {
-  padding: 49px 0 0 60px;
+  padding: 46px 0 0 60px;
   color: $color-sapphire;
   text-align: left;
 
@@ -35,14 +36,21 @@
   font-size: 48px;
   font-weight: 600;
   margin: 0;
-  padding: 0 0 25px;
+  padding: 0 0 14px;
   letter-spacing: 1.44px;
-  line-height: normal;
+  line-height: 1;
 
   @include vp-1199 {
-    padding: 0 0 6px;
+    padding: 0 14px 0 0;
     font-size: 42px;
     letter-spacing: 1.26px;
+    line-height: normal;
+  }
+
+  @include vp-767 {
+    padding: 0 0 6px;
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -51,10 +59,14 @@
   font-size: 18px;
   font-weight: 400;
   margin: 0;
-  padding: 0 0 55px;
+  padding: 0 0 40px;
 
   @include vp-1199 {
-    padding: 0 0 50px;
+    padding: 0 0 36px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 26px;
   }
 }
 
@@ -62,7 +74,7 @@
   font-family: $ff-roboto;
   font-weight: 300;
   margin: 0;
-  padding: 0 0 16px;
+  padding: 0 0 8px;
 
   @include vp-1199 {
     padding: 0;
@@ -104,8 +116,8 @@
 
 .about__video {
   position: absolute;
-  top: 450px;
-  left: 37%;
+  top: 410px;
+  left: 38%;
 
   &::before {
     content: "";
@@ -120,14 +132,14 @@
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    top: 610px;
-    left: 210px;
+    top: 587px;
+    left: 206px;
   }
 
   @include vp-767 {
     position: relative;
     left: -15px;
-    top: 0;
+    top: 7px;
     width: 320px;
     height: 167px;
   }

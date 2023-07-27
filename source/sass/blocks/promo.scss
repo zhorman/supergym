@@ -2,11 +2,11 @@
   padding: 135px 0 120px;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 95px 0;
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 64px 0 70px;
   }
 }
 
@@ -17,6 +17,7 @@
   grid-template-rows: repeat(2, 1fr);
 
   @include vp-1199 {
+    gap: 29px 30px;
     grid-template-rows: repeat(2, auto);
   }
 
@@ -27,7 +28,7 @@
 }
 
 .promo__title {
-  padding: 0 0 34px;
+  padding: 0 0 36px;
   margin: 0;
   text-align: center;
   line-height: 1;
@@ -37,12 +38,14 @@
   letter-spacing: 1.62px;
 
   @include vp-1199 {
-    padding: 0 0 40px;
+    padding: 0 10px 44px 0;
     font-size: 42px;
+    letter-spacing: 1.26px;
   }
 
   @include vp-767 {
     font-size: 32px;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -54,6 +57,7 @@
   color: $color-default-white;
 
   @include vp-1199 {
+    grid-template-columns: 1fr 399px;
     grid-column: 1 / -1;
     grid-row: 1;
   }
@@ -68,11 +72,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 45px;
+  padding: 44px 45px;
   font-family: $ff-roboto;
   background-color: $color-torch-red;
 
   @include vp-767 {
+    padding: 44px 45px 42px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -83,6 +88,10 @@
 .promo__primary-time {
   font-size: 28px;
   font-weight: 700;
+
+  @include vp-767 {
+    padding: 0 0 7px;
+  }
 }
 
 .promo__primary-price {
@@ -90,6 +99,14 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 100%;
+
+  @include vp-1199 {
+    padding: 0 0 25px;
+  }
+
+  @include vp-1199 {
+    padding: 0 0 13px;
+  }
 }
 
 .promo__primary-description {
@@ -98,8 +115,12 @@
   font-size: 18px;
   font-weight: 400;
 
+  @include vp-1199 {
+    padding: 0 0 184px;
+  }
+
   @include vp-767 {
-    padding: 0 0 40px;
+    padding: 0 0 29px;
   }
 }
 
@@ -138,7 +159,7 @@
 
 .promo__secondary {
   grid-column: 2;
-  padding: 30px;
+  padding: 28px;
   font-family: $ff-roboto;
   border: 7px solid transparent;
   border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
@@ -149,7 +170,9 @@
   }
 
   @include vp-1199 {
-    padding: 20px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
     grid-column: 2;
     grid-row: 2;
 
@@ -164,6 +187,8 @@
   }
 
   @include vp-767 {
+    padding: 36px;
+    align-items: center;
     text-align: center;
   }
 }
@@ -177,8 +202,17 @@
 
 .promo__secondary-description {
   margin: 0;
-  padding: 0 0 50px;
+  padding: 0 0 60px;
   font-weight: 400;
+
+  @include vp-1199 {
+    padding: 0 0 39px;
+    margin: 0 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 0 0 20px;
+  }
 }
 
 .promo__secondary-btn {

@@ -4,7 +4,8 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {slider} from './modules/slider/slider';
 import {sliderFeedback} from './modules/slider/slider-feedback';
-import { initAccordions } from "./modules/accordion/init-accordion";
+import {initAccordions} from "./modules/accordion/init-accordion";
+import {aboutVideo} from "./modules/about-video/about-video";
 
 // ---------------------------------
 
@@ -30,17 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const playButton = document.querySelector('.about__video-button');
-const video = document.querySelector('.about__video-content');
-
-playButton.addEventListener('click', function () {
-  video.play();
-  playButton.style.display = 'none';
-
-  video.addEventListener('play', function () {
-    playButton.style.display = 'none';
-  });
-});
 
 
 // ---------------------------------

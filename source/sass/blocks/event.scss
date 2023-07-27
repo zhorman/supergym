@@ -2,11 +2,11 @@
   padding: 120px 0 106px;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 99px 0 100px;
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 70px 0 55px;
   }
 }
 
@@ -24,10 +24,15 @@
   grid-template-rows: repeat(4, auto);
   background-color: $color-torch-red;
   color: $color-default-white;
-  padding: 81px 78.5px;
+  padding: 82px 78.5px;
 
   @include vp-1199 {
-    padding: 32px 45px;
+    grid-template-rows: repeat(4, min-content);
+    padding: 48px 45px 28px;
+  }
+
+  @include vp-767 {
+    padding: 48px 45px 50px;
   }
 }
 
@@ -35,7 +40,7 @@
   grid-column: 1;
   grid-row: 1 / 3;
   margin: 0;
-  padding: 0 50px 0 10px;
+  padding: 4px 50px 0 10px;
   font-size: 82px;
   font-weight: 600;
   letter-spacing: 2.46px;
@@ -43,26 +48,31 @@
   text-transform: uppercase;
 
   @include vp-1199 {
-    padding: 0 10px;
+    padding: 3px 31px 0 10px;
     font-size: 48px;
-    line-height: 1;
+    line-height: 96%;
     letter-spacing: 1.44px;
+  }
+
+  @include vp-767 {
+    padding: 3px 31px 0 8px;
   }
 }
 
 .event__date {
   display: grid;
   grid-template-columns: min-content 1fr;
+  padding: 0 0 18px 8px;
   font-family: $ff-roboto;
 
   @include vp-1199 {
-    padding: 0 0 13px;
+    padding: 0 0 5px;
   }
 }
 
 .event__date-title {
   grid-column: 1 / -1;
-  padding: 0 0 23px;
+  padding: 0 0 8px;
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
@@ -76,23 +86,23 @@
     width: 64px;
     background-color: $color-default-white;
     left: 0;
-    bottom: 18px;
+    bottom: 5px;
   }
 
   @include vp-1199 {
-    padding: 0;
+    padding: 0 0 5px;
     font-size: 12px;
 
     &::after {
       width: 42px;
       left: 0;
-      bottom: 0;
+      bottom: 4px;
     }
   }
 }
 
 .event__date-day {
-  padding: 10px 10px 0 0;
+  padding: 8px 7px 0 0;
   flex-shrink: 0;
   font-size: 40px;
   font-weight: 700;
@@ -106,6 +116,7 @@
 .event__date-text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 140%;
 
   @include vp-1199 {
     font-size: 10px;
@@ -117,9 +128,10 @@
   display: flex;
   flex-direction: column;
   font-family: $ff-roboto;
+  padding: 0 0 0 7px;
 
   @include vp-1199 {
-    padding: 0 0 15px;
+    padding: 0 0 5px;
   }
 }
 
@@ -166,7 +178,7 @@
 
 .event__description {
   margin: 0;
-  padding: 0 0 50px;
+  padding: 9px 0 46px;
   grid-column: 1 / -1;
   font-family: $ff-roboto;
   font-size: 18px;
@@ -174,9 +186,9 @@
   line-height: 150%;
 
   @include vp-1199 {
-    padding: 0 0 36px;
+    padding: 0 0 32px;
     font-size: 12px;
-    line-height: 150%;
+    line-height: 140%;
   }
 }
 
