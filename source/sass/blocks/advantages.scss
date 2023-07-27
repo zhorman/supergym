@@ -1,19 +1,19 @@
 .advantages {
-  padding: 108px 0 130px;
+  padding: 111px 0 130px;
   background-color: $color-ghost-white;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 96px 0 91px;
   }
 
-  @include vp-1199 {
-    padding: 70px 0;
+  @include vp-767 {
+    padding: 68px 0 67px;
   }
 }
 
 .advantages__title {
   margin: 0;
-  padding: 0 0 55px;
+  padding: 0 0 55px 5px;
   font-size: 54px;
   text-align: center;
   color: $color-sapphire;
@@ -23,11 +23,15 @@
 
   @include vp-1199 {
     font-size: 42px;
-    padding: 0 0 60px;
+    padding: 0 22px 49px 0;
+    line-height: 1;
+    letter-spacing: 1.26px;
   }
 
   @include vp-767 {
     font-size: 32px;
+    padding: 0 20px 49px 0;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -35,7 +39,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: repeat(2, auto);
-  gap: 165px 60px;
+  gap: 151px 58px;
   margin: 0;
   padding: 0 70px;
   list-style: none;
@@ -48,7 +52,7 @@
     width: 340px;
     height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
-    top: 170px;
+    top: 155px;
     left: 60px;
   }
 
@@ -58,15 +62,15 @@
     width: 340px;
     height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
-    top: 170px;
+    top: 155px;
     right: 60px;
   }
 
   @include vp-1199 {
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: min-content 1fr min-content;
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 0 40px;
+    gap: 43px 28px;
     padding: 0;
 
     ::before {
@@ -81,6 +85,6 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
   }
 }
