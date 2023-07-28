@@ -2079,7 +2079,8 @@ button,
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  background: url("/img/hero-bg.png") no-repeat;
+  background: url("img/hero-bg.png") no-repeat;
+  background-color: #ed0233;
   background-size: cover;
 }
 @media (max-width: 1199px) {
