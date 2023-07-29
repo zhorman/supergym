@@ -3862,6 +3862,14 @@ button,
     text-align: center;
   }
 
+  .coaches__button-prev {
+    top: 229px;
+  }
+
+  .coaches__button-next {
+    top: 229px;
+  }
+
   .coach__img {
     width: 268px;
   }
@@ -4355,6 +4363,20 @@ button,
   .coaches__title {
     font-size: 32px;
     padding: 0 0 40px;
+  }
+
+  .coaches__button-prev {
+    left: 15px;
+    top: 240px;
+    width: 10px;
+    height: 19px;
+  }
+
+  .coaches__button-next {
+    right: 15px;
+    top: 240px;
+    width: 10px;
+    height: 19px;
   }
 
   .coach__img {
