@@ -1,5 +1,6 @@
 .feedback {
-  padding: 120px 0 124px;
+  padding: 123px 0 120px;
+  position: relative;
 
   @include vp-1199 {
     padding: 96px 0 99px;
@@ -99,5 +100,38 @@
   @include vp-767 {
     grid-column: 1 / -1;
     grid-row: 2;
+  }
+}
+
+
+.feedback__button-prev {
+  left: 237px;
+  top: 121px;
+
+  @include vp-1199 {
+    left: -5px;
+  }
+
+  @include vp-767 {
+    left: 0;
+    width: 10px;
+    height: 19px;
+    top: 180px;
+  }
+}
+
+.feedback__button-next {
+  right: 237px;
+  top: 121px;
+
+  @include vp-1199 {
+    right: -5px;
+  }
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+    top: 180px;
+    right: 0;
   }
 }

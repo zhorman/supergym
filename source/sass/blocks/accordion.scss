@@ -55,16 +55,12 @@
   width: 42px;
   height: 42px;
   position: absolute;
-  padding: 0;
+  background-image: url("../img/svg/open.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
   right: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  font-size: inherit;
-  font-weight: 300;
-  border: 1px solid #1c3374;
-  border-radius: 50%;
-  color: #102654;
+  top: -5px;
 
   @include vp-1199 {
     top: -7px;
@@ -72,12 +68,12 @@
 
   @include vp-767 {
     top: 14px;
+    right: -7px;
     width: 32px;
     height: 32px;
-
-    & svg {
-      width: 15px;
-      height: 15px;
-    }
   }
+}
+
+.accordion__button--opened {
+  background-image: url("../img/svg/close.svg");
 }

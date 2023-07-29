@@ -6,6 +6,7 @@ import {slider} from './modules/slider/slider';
 import {sliderFeedback} from './modules/slider/slider-feedback';
 import {initAccordions} from "./modules/accordion/init-accordion";
 import {aboutVideo} from "./modules/about-video/about-video";
+import "./modules/accordion-button/accordion-button";
 
 // ---------------------------------
 

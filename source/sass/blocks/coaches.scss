@@ -1,5 +1,6 @@
 .coaches {
   padding: 0 0 103px;
+  position: relative;
 
   @include vp-1199 {
     padding: 0 0 100px;
@@ -41,4 +42,14 @@
     font-size: 32px;
     padding: 0 0 40px;
   }
+}
+
+.coaches__button-prev {
+  top: 261px;
+  left: 39px;
+}
+
+.coaches__button-next {
+  top: 261px;
+  right: 39px;
 }
