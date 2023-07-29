@@ -47,9 +47,31 @@
 .coaches__button-prev {
   top: 261px;
   left: 39px;
+
+  @include vp-1199 {
+    top: 229px;
+  }
+
+  @include vp-767 {
+    left: 15px;
+    top: 240px;
+    width: 10px;
+    height: 19px;
+  }
 }
 
 .coaches__button-next {
   top: 261px;
   right: 39px;
+
+  @include vp-1199 {
+    top: 229px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+    top: 240px;
+    width: 10px;
+    height: 19px;
+  }
 }
