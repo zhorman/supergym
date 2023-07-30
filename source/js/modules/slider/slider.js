@@ -1,3 +1,5 @@
+import Swiper from '../../vendor/swiper';
+
 const swiper = new Swiper('.swiper', {
   // Настройки слайдера
   slidesPerView: 4,
@@ -27,3 +29,5 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+export default swiper;

@@ -2,11 +2,11 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-import {slider} from './modules/slider/slider';
-import {sliderFeedback} from './modules/slider/slider-feedback';
-import {initAccordions} from "./modules/accordion/init-accordion";
-import {aboutVideo} from "./modules/about-video/about-video";
-import "./modules/accordion-button/accordion-button";
+import './modules/slider/slider';
+import './modules/slider/slider-feedback';
+import {initAccordions} from './modules/accordion/init-accordion';
+import './modules/about-video/about-video';
+import './modules/accordion-button/accordion-button';
 
 // ---------------------------------
 
@@ -31,8 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 });
-
-
 
 // ---------------------------------
 
