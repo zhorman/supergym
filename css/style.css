@@ -1824,11 +1824,6 @@ button,
   flex-shrink: 0;
 }
 
-.about__image img {
-  width: 660px;
-  height: 401px;
-}
-
 .about__video {
   position: absolute;
   top: 410px;
@@ -1899,6 +1894,16 @@ button,
   list-style: none;
   margin: 0;
   padding: 0 0 42px;
+}
+
+.abonements__controls::after {
+  content: "";
+  position: absolute;
+  bottom: 42px;
+  left: 410px;
+  width: 29%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
 }
 
 .abonements__control {
@@ -2379,7 +2384,7 @@ button,
 .advantages__list ::before {
   content: "";
   position: absolute;
-  width: 340px;
+  width: 30%;
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
   top: 155px;
@@ -2389,7 +2394,7 @@ button,
 .advantages__list ::after {
   content: "";
   position: absolute;
-  width: 340px;
+  width: 30%;
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
   top: 155px;
@@ -2823,6 +2828,8 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .free-lesson {
@@ -2854,6 +2861,7 @@ button,
   border: none;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
+  outline: none;
 }
 
 .free-lesson input::-webkit-input-placeholder {
@@ -2884,6 +2892,61 @@ button,
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.free-lesson input.focus-visible:focus {
+  padding: 8px 15px;
+  border-color: transparent;
+  outline: 1px solid #ffffff;
+}
+
+.free-lesson input.focus-visible:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:focus::placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:active {
+  border-color: transparent;
+  outline: 1px solid #ffffff;
+}
+
+.free-lesson input.focus-visible:active::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:active::-moz-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:active:-ms-input-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:active::-ms-input-placeholder {
+  color: transparent;
+}
+
+.free-lesson input.focus-visible:active::placeholder {
+  color: transparent;
+}
+
+.free-lesson input:disabled {
+  opacity: 0.4;
 }
 
 .free-lesson__btn {
@@ -4268,6 +4331,10 @@ button,
   .faq__control:hover:not(.focus-visible) {
     color: #ffffff;
     background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));
+  }
+
+  .free-lesson input:hover:not(.focus-visible) {
+    border-bottom: 1px solid #ffffff;
   }
 
   .footer__navigation-item:hover:not(.focus-visible) {
