@@ -98,9 +98,6 @@
 }
 
 .about__image img {
-  width: 660px;
-  height: 401px;
-
   @include vp-1199 {
     width: 678px;
     height: 345px;

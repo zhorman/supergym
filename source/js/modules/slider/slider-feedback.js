@@ -3,7 +3,6 @@ import Swiper from '../../vendor/swiper';
 const swiper = new Swiper('.feedback__swiper', {
   // Настройки слайдера
   slidesPerView: 1,
-  spaceBetween: 600,
   loop: false,
 
   navigation: {

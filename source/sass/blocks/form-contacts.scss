@@ -1,6 +1,8 @@
 .form-contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1366px;
+  margin: 0 auto;
 
   @include vp-1199 {
     display: block;

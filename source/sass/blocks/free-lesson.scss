@@ -55,11 +55,39 @@
   border: none;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
+  outline: none;
 
   &::placeholder {
     font-size: 14px;
     font-weight: 400;
     color: $color-default-white;
+  }
+
+  @include hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  @include focus {
+    padding: 8px 15px;
+    border-color: transparent;
+    outline: 1px solid $color-default-white;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  @include active {
+    border-color: transparent;
+    outline: 1px solid $color-default-white;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
   }
 
   @include vp-1199 {

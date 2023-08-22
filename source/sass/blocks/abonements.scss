@@ -45,6 +45,16 @@
   margin: 0;
   padding: 0 0 42px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 42px;
+    left: 410px;
+    width: 29%;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
   @include vp-1199 {
     gap: 54px;
     font-size: 18px;
